@@ -7,7 +7,9 @@ function App() {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>Dogs</h1>
-      <Dog name={dogs[0].name} description={dogs[0].description} />
+      {
+        dogs.map(dog => (<Dog data={dog} />))
+      }
     </div>
   );
 }

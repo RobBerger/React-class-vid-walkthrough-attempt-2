@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Dog({ name, description}) {
+function Dog({ data }) {
     return (
         <div>
-            <h2>{name}</h2>
-            <p>{description}</p>
+            <img src={data.img_url} alt={data.name} width="300"></img>
+            <h2>{data.name}</h2>
+            <p>{data.description}</p>
         </div>
     )
 }
