@@ -1,7 +1,11 @@
 import React from 'react';
 
-function Dog() {
-    return (<p>dog component</p>)
+function Dog(props) {
+    return (
+        <div>
+            <h2>{props.name}</h2>
+        </div>
+    )
 }
 
 export default Dog;
