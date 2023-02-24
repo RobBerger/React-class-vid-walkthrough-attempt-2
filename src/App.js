@@ -7,7 +7,7 @@ function App() {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>Dogs</h1>
-      <Dog />
+      <Dog name={dogs[0].name} description={dogs[0].description} />
     </div>
   );
 }

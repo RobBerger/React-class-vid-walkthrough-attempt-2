@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Dog(props) {
+function Dog({ name, description}) {
     return (
         <div>
-            <h2>{props.name}</h2>
+            <h2>{name}</h2>
+            <p>{description}</p>
         </div>
     )
 }
