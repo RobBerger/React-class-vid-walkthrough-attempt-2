@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-const heading = React.createElement('h1', null, 'Hello World!');
-
-const l1 = React.createElement('li', null, 'Bananas');
-const l2 = React.createElement('li', null, 'Milk');
-const l3 = React.createElement('li', null, 'Bread');
-
-const groceryList = React.createElement('ol', null, [l1, l2, l3]);
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    [heading, groceryList]
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 )
 
 
